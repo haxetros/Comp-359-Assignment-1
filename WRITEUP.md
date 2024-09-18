@@ -144,16 +144,36 @@ n * steps = n * log_2n = O(n log_2n)
 For Mergesort, we have log_2n levels of recursion so the overall time complexity of in-place merge sort:
 log_2n * O(n log_2n) = O(n (log_2n)^2)
 
-***TODO: CREATE SEPARATE JAVA FILES CONTAINING THE EXTRA  MEMORY MERGESORT AND THEN IN-PLACE MERGESORT, TESTING FUNCTIONS SHOULD ALSO BE IN A SEPARATE FILE. THE EMPIRCAL ANALYSIS SHOULD ALSO BE IN A SEPARATE FILE. 4 SEPARATE JAVA FILES TOTAL (maybe should I do extra memory and in-place mergesort in the same file? idk)***
 
-***TODO: EMPIRCAL TESTING OF RANDOM ARRAYS OF SIZES [1000, 5000, 10000, 50000, 100000], RUN EACH 5 TIMES AND AVERAGE THEM OUT, MAKE SURE TO SHOW THE CODE FOR THE TESTING, AND PUT IT IN A MARKDOWN TABLE OR TAKE A SCREENSHOT OF EXCEL TABLE, EITHER WORK. THE IN-PLACE MERGESORT WILL PROBABLY TAKE A LITTLE LONGER, NOTE YOUR OBSERVATIONS***
+### Testing and Timing
 
-***TODO: WRITE A SHORT PARAGRAPH ABOUT THE TRADEOFFS OF EACH, SPACE VS. TIME***
+We wrote code for testing our code in MergeSortTest.java using Junit 5.8.1
+
+For timing, we wrote code calculating the runtime of each MergeSort with different array sizes (see MergeSortTimer.java).
+The computer used for running this code is as follows:
+
+Programming Language: Java 21 <br>
+OS: Windows 11 <br>
+CPU: 11th Gen Intel(R) Core(TM) i5-11400H @ 2.70GHz <br>
+Memory: 32GB <br>
+
+The times were averaged out over 5 runs. Times are in milliseconds.
+
+### Results
+
+| Size     | ExtraMemorySort (ms) | InPlaceSort (ms) |
+|----------|----------------------|------------------|
+| 1000     | 0.20                 | 0.20             |
+| 10000    | 1.00                 | 1.60             |
+| 100000   | 12.60                | 21.20            |
+| 1000000  | 122.80               | 242.60           |
+
+We observed that the extra memory merge sort ran significantly faster than the in-place merge sort, especially as the array sizes increased. According to our analysis framework, the in-place merge sort uses significantly less memory O(1) compared to O(n) for the extra memory merge sort. However, this reduction in space complexity comes at the cost of increased time complexity. Specifically, the time complexity of the extra memory merge sort is O(n log n) while that of the in-place merge sort is O(n (log n)^2). For larger arrays, such as those with 1,000,000 elements, the in-place merge sort took approximately twice as long as the extra memory merge sort. This increased runtime may become a significant issue as array sizes grow. For smaller arrays of size 1,000 or less, the runtimes for both algorithms are about the same, making the in-place merge sort a good option when memory is a significant constraint.
 
 ***TODO (not here): SLIDES FOR PRESENTATION***
 
 
-References:
+### References:
 
 Levitin, A. (2012). Introduction to the design & analysis of algorithms. In Pearson Addison Wesley eBooks. https://ci.nii.ac.jp/ncid/BB14217613
 
