@@ -13,6 +13,9 @@ public class MergeSortTest {
         int[] arrSorted = {1, 2, 3, 4, 5, 6, 7, 8};
         MergeSort.extraMemoryMergeSort(arrSorted, arrSorted.length);
         assertArrayEquals(arrSorted, arrSorted);
+        int[] expcectedSorted = {1, 2, 3, 4, 5, 6, 7, 8};
+        MergeSort.extraMemoryMergeSort(arrSorted, arrSorted.length);
+        assertArrayEquals(expcectedSorted, arrSorted);
 
         int[] arrReverse = {8, 7, 6, 5, 4, 3, 2, 1};
         int[] expectedReverse = {1, 2, 3, 4, 5, 6, 7, 8};
@@ -45,6 +48,9 @@ public class MergeSortTest {
         int[] arrSorted = {1, 2, 3, 4, 5, 6, 7, 8};
         MergeSort.inPlaceMergeSort(arrSorted);
         assertArrayEquals(arrSorted, arrSorted);
+        int[] expcectedSorted = {1, 2, 3, 4, 5, 6, 7, 8};
+        MergeSort.inPlaceMergeSort(arrSorted);
+        assertArrayEquals(expcectedSorted, arrSorted);
 
         int[] arrReverse = {8, 7, 6, 5, 4, 3, 2, 1};
         int[] expectedReverse = {1, 2, 3, 4, 5, 6, 7, 8};
