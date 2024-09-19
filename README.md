@@ -1,5 +1,7 @@
 # Comp 359 Assignment 1 (Draft)
 
+### Introduction
+
 Mergesort is a sorting algorithm that uses the algorithm design of divide-and-conquer to sort elements in an array. According to Levitin (2012), divide-and-conquer algorithms generally follow three steps:
 1. Divide the problem into several similar sized subproblems.
 2. Solve the subproblems recursively (non-recursive algorithms also possible here)
@@ -19,6 +21,8 @@ Mergesort function pseudocode from Levitin (2012):
 Merge function pseudocode from Levitin (2012):
 
 ![](./resources/mergePseudo.png)
+
+### Implementation
 
 Using both the pseudocode and extra memory implement by baeldung (2024):
 ```java
@@ -115,7 +119,7 @@ Dadhaniya (2024) describes an efficient approach to in-place Mergesort using a s
 ```
 
 
-Analysis Framework
+### Analysis Framework
 
 Extra memory Mergesort:
 As discussed in the COMP-359 "Ch 5: Divide-and_Conquer" slides (Campbell, 2024), Mergesort can be expressed as a recurence relation:
