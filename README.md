@@ -14,11 +14,11 @@ We'll first show the pseudocode as defined by Levitin (2012), for both Mergesort
 
 Mergesort function pseudocode from Levitin (2012):
 
-![](./photos/mergeSortPseudo.png)
+![](./resources/mergeSortPseudo.png)
 
 Merge function pseudocode from Levitin (2012):
 
-![](./photos/mergePseudo.png)
+![](./resources/mergePseudo.png)
 
 Using both the pseudocode and extra memory implement by baeldung (2024):
 ```java
@@ -120,7 +120,7 @@ Analysis Framework
 Extra memory Mergesort:
 As discussed in the COMP-359 "Ch 5: Divide-and_Conquer" slides (Campbell, 2024), Mergesort can be expressed as a recurence relation:
 
-![](./photos/mergeSortRec.png)
+![](./resources/mergeSortRec.png)
 
 When solved, the time complexity comes to O(n logn).
 
