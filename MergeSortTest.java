@@ -11,6 +11,7 @@ public class MergeSortTest {
         assertArrayEquals(expected, arr);
 
         int[] arrSorted = {1, 2, 3, 4, 5, 6, 7, 8};
+        int[] expcectedSorted = {1, 2, 3, 4, 5, 6, 7, 8};
         MergeSort.extraMemoryMergeSort(arrSorted, arrSorted.length);
         assertArrayEquals(arrSorted, arrSorted);
         int[] expcectedSorted = {1, 2, 3, 4, 5, 6, 7, 8};
@@ -46,6 +47,7 @@ public class MergeSortTest {
         assertArrayEquals(expected, arr);
 
         int[] arrSorted = {1, 2, 3, 4, 5, 6, 7, 8};
+        int[] expcectedSorted = {1, 2, 3, 4, 5, 6, 7, 8};
         MergeSort.inPlaceMergeSort(arrSorted);
         assertArrayEquals(arrSorted, arrSorted);
         int[] expcectedSorted = {1, 2, 3, 4, 5, 6, 7, 8};
