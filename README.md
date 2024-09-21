@@ -4,7 +4,6 @@
 ## Contributions: 
 Elijah (haxetros) - Java Code and README/Writeup <br>
 Nicole (DJNicoco) - C++ Code <br>
-Nicholas (rxmvn) - Python Code
 
 
 
