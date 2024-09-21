@@ -4,7 +4,7 @@ Link to Github Repo: https://github.com/haxetros/Comp-359-Assignment-1
 
 ## Contributions: 
 Elijah (haxetros) - Java Code and README/Writeup <br>
-Nicole (DJNicoco) - C++ Code <br>
+Nicole (DJNicoco) - C++ Code and README in the Nicole (DJNicoco) folder <br>
 
 
 
