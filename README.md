@@ -1,6 +1,14 @@
-# Comp 359 Assignment 1 (Draft)
+# Comp 359 Assignment 1
 
-### Introduction
+
+## Contributions: 
+Elijah (haxetros) - Java Code and README/Writeup <br>
+Nicole (DJNicoco) - C++ Code <br>
+Nicholas (rxmvn) - Python Code
+
+
+
+## Introduction
 
 Mergesort is a sorting algorithm that uses the algorithm design of divide-and-conquer to sort elements in an array. According to Levitin (2012), divide-and-conquer algorithms generally follow three steps:
 1. Divide the problem into several similar sized subproblems.
@@ -22,7 +30,7 @@ Merge function pseudocode from Levitin (2012):
 
 ![](./resources/mergePseudo.png)
 
-### Implementation
+## Implementation
 
 Using both the pseudocode and extra memory implement by baeldung (2024):
 ```java
@@ -119,7 +127,7 @@ Dadhaniya (2024) describes an efficient approach to in-place Mergesort using a s
 ```
 
 
-### Analysis Framework
+## Analysis Framework
 
 Extra memory Mergesort:
 As discussed in the COMP-359 "Ch 5: Divide-and_Conquer" slides (Campbell, 2024), Mergesort can be expressed as a recurence relation:
@@ -149,7 +157,7 @@ For Mergesort, we have log_2n levels of recursion so the overall time complexity
 log_2n * O(n log_2n) = O(n (log_2n)^2)
 
 
-### Testing and Timing
+## Testing and Timing
 
 We wrote code for testing our code in MergeSortTest.java using Junit 5.8.1
 
@@ -163,7 +171,7 @@ Memory: 32GB <br>
 
 The times were averaged out over 5 runs. Times are in milliseconds.
 
-### Results
+## Results
 
 | Size     | ExtraMemorySort (ms) | InPlaceSort (ms) |
 |----------|----------------------|------------------|
@@ -174,10 +182,8 @@ The times were averaged out over 5 runs. Times are in milliseconds.
 
 We observed that the extra memory merge sort ran significantly faster than the in-place merge sort, especially as the array sizes increased. According to our analysis framework, the in-place merge sort uses significantly less memory O(1) compared to O(n) for the extra memory merge sort. However, this reduction in space complexity comes at the cost of increased time complexity. Specifically, the time complexity of the extra memory merge sort is O(n log n) while that of the in-place merge sort is O(n (log n)^2). For larger arrays, such as those with 1,000,000 elements, the in-place merge sort took approximately twice as long as the extra memory merge sort. This increased runtime may become a significant issue as array sizes grow. For smaller arrays of size 1,000 or less, the runtimes for both algorithms are about the same, making the in-place merge sort a good option when memory is a significant constraint.
 
-***TODO (not here): SLIDES FOR PRESENTATION***
 
-
-### References:
+## References:
 
 Levitin, A. (2012). Introduction to the design & analysis of algorithms. In Pearson Addison Wesley eBooks. https://ci.nii.ac.jp/ncid/BB14217613
 
